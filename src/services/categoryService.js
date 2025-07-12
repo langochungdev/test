@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API = 'http://localhost:8080/api/categories'
+const API = 'https://ed309508f10b.ngrok-free.app/api/categories'
 
 export default {
     getAll: () => axios.get(API).then(res => res.data),
