@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API = 'https://ed309508f10b.ngrok-free.app/api/products'
+const API = `${import.meta.env.VITE_API_BASE}/products`
 
 export default {
     getAll: () => axios.get(API).then(res => res.data),

@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API = 'https://ed309508f10b.ngrok-free.app/api/categories'
+const API = `${import.meta.env.VITE_API_BASE}/categories`
 
 export default {
     getAll: () => axios.get(API).then(res => res.data),
